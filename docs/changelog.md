@@ -35,7 +35,7 @@ Added a configurable `listLimit` [setting](https://github.com/vantage-sh/helm-ch
 ### API Updates
 
 - **Audit logs endpoint:** The new `/audit_logs` [endpoint](https://vantage.readme.io/reference/getauditlogs) is available to programmatically return audit logs from your account.
-- **New Vantage MCP version:** A new version of the self-hosted Vantage MCP is available. This version includes additional parameter support on existing tools and the addition of the `list-folders` tool. See the MCP's repo for [release details](https://github.com/vantage-sh/vantage-mcp-server/releases/tag/v0.0.5).
+- **New Vantage MCP version:** A new version of the [Vantage MCP](/vantage_mcp) is available. This version includes additional parameter support, such as the ability to recognize report settings and groupings on the `query-costs` tool. Support is also available for SSO login on the remote MCP.
 
 ## July 2025
 
