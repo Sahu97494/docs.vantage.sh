@@ -25,6 +25,56 @@
     ]
   },
   "favicon": "/favicon.png",
+  "redirects": [
+    {
+      "source": "/connecting_mongo",
+      "destination": "/connecting_mongodb-atlas"
+    },
+    {
+      "source": "/metrics",
+      "destination": "/active_resources"
+    },
+    {
+      "source": "/permissions_gcp",
+      "destination": "/connecting_gcp"
+    },
+    {
+      "source": "/terraform_cloud_integration",
+      "destination": "/terraform"
+    },
+    {
+      "source": "/supported_services",
+      "destination": "/aws_supported_services"
+    },
+    {
+      "source": "/reports",
+      "destination": "/report_notifications"
+    },
+    {
+      "source": "/slack_integration",
+      "destination": "/slack"
+    },
+    {
+      "source": "/microsoft_teams_integration",
+      "destination": "/microsoft_teams"
+    },
+    {
+      "source": "/permissions_aws",
+      "destination": "/connecting_aws"
+    },
+    {
+      "source": "/opencost",
+      "destination": "/kubernetes_agent"
+    },
+    {
+      "source": "/kubernetes_container_insights",
+      "destination": "/kubernetes_agent"
+    },
+    {
+      "source": "/virtual_tagging",
+      "destination": "/tagging"
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -32,6 +82,7 @@
         "groups": [
           {
             "group": "Get Started",
+            "icon": "flag-checkered",
             "pages": [
               "index",
               "getting_started"
@@ -39,9 +90,11 @@
           },
           {
             "group": "Account & Security",
+            "icon": "users",
             "pages": [
               "security",
               "vantage_account",
+              "audit_logs",
               "sso",
               "rbac",
               "workspaces",
@@ -50,7 +103,8 @@
             ]
           },
           {
-            "group": "API and Terraform",
+            "group": "API & Terraform",
+            "icon": "laptop-code",
             "pages": [
               "api-reference",
               "vantage_mcp",
@@ -71,6 +125,7 @@
           },
           {
             "group": "Provider Integrations",
+            "icon": "cloud",
             "pages": [
               {
                 "group": "AWS",
@@ -132,7 +187,8 @@
             ]
           },
           {
-            "group": "App Integration",
+            "group": "App Integrations",
+            "icon": "message",
             "pages": [
               "/jira",
               "/slack",
@@ -141,6 +197,7 @@
           },
           {
             "group": "Cost Reporting Features",
+            "icon": "chart-line",
             "pages": [
               "/overview",
               {
@@ -170,6 +227,7 @@
           },
           {
             "group": "Financial Planning Features",
+            "icon": "coins",
             "pages": [
               "autopilot",
               "budgets",
@@ -232,9 +290,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "About Us",
-          "href": "https://www.vantage.sh/about",
-          "icon": "users"
+          "anchor": "API",
+          "href": "https://vantage.readme.io/reference/general",
+          "icon": "laptop-code"
         },
         {
           "anchor": "Community",
@@ -266,13 +324,13 @@
   "navbar": {
     "links": [
       {
-        "label": "Login",
-        "href": "https://console.vantage.sh/login"
+        "label": "Pricing",
+        "href": "https://www.vantage.sh/pricing"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Get Started",
+      "label": "Sign Up",
       "href": "https://console.vantage.sh/signup"
     }
   },
