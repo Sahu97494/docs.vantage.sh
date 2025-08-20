@@ -402,7 +402,7 @@ The following examples demonstrate common scenarios for using Network Flow Repor
 ![Sample Network Flow Report with cross-AZ and public traffic](https://assets.vantage.sh/docs/nfr-sample.png)
 </Frame>
 
-### Example 1: View All Network Traffic
+### Example 1 - View All Network Traffic
 
 The **All Network Flow Logs** report shows all your network flows. The flow’s Resource UUID and Peer Resource UUID are provided as well as the traffic category (e.g., public). Review this report to get a high-level view of all your traffic flows.
 
@@ -410,7 +410,7 @@ The **All Network Flow Logs** report shows all your network flows. The flow’s 
 ![Sample Network Flow Report with cross-AZ and public traffic](https://assets.vantage.sh/docs/nfr-start.png)
 </Frame>
 
-### Example 2: Identify Cross-AZ Traffic
+### Example 2 - Identify Cross-AZ Traffic
 
 Cross-AZ data transfer within AWS incurs higher costs compared to intra-AZ data transfer. [According to AWS](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer), “For data transferred between a Local Zone and an Availability Zone within the same AWS Region, "in" to and "out" from Amazon EC2 in the Local Zone” data is charged at $0.01/GB for *both* transfer in and transfer out. Transferring data between AZs requires more network bandwidth compared to transferring data within the same AZ. This additional bandwidth consumption contributes to higher costs.
 
@@ -425,7 +425,7 @@ Review the highest-costing flows and consider the following tips:
 - Try to place dependent resources within the same AZ to minimize cross-AZ data transfer.
 - Use [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html) to route traffic internally within AWS, reducing the need for cross-AZ traffic. This can help in minimizing data transfer costs and enhance security by keeping everything in the same VPC.
 
-### Example 3: Examine Public Traffic
+### Example 3 - Examine Public Traffic
 
 When monitoring network costs, analyzing public traffic can reveal significant insights about where your traffic is going when it reaches the public internet. By analyzing destination details, you can ensure that traffic is taking the correct path or is going only to trusted and necessary endpoints. In this report, the **Destination Hostname** grouping/column provides a human-readable format of the destination, helping you quickly identify known destination services or endpoints.
 

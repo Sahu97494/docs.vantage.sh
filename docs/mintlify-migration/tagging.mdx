@@ -337,13 +337,13 @@ You can filter by virtual tags in Cost Reports, cost allocation segments, and wh
 
 To delete a virtual tag, navigate to the [Tags](https://console.vantage.sh/settings/tags) page. Select the **Virtual Tags** tab and open an existing virtual tag. Click the trashcan icon at the top of the tag page. Your data will be re-tagged, excluding the deleted virtual tag, going back to the deleted tag’s backfill bill period. Newly ingested data will no longer be tagged with the deleted tag.
 
-### Virtual Tagging Examples
+## Virtual Tagging Examples
 
 The following examples demonstrate how to use virtual tagging in a multi-provider organization.
 
-#### Custom Value Examples
+### Custom Values Examples
 
-**Example 1: Cross-Provider Tagging**
+#### Example 1 - Cross-Provider Tagging
 
 You want to create a tag mapping for each of your teams that maps corresponding teams with certain services and provider accounts.
 
@@ -381,7 +381,7 @@ Within Cost Reports, you can easily filter and group by these tag options to eas
 </Step>
 </Steps>
 
-**Example 2: Consolidate Existing Tags**
+#### Example 2 - Consolidate Existing Tags
 
 You have a tagging practice established at your organization, but teams often create tags with spelling variations, tags with typos, or they create duplicate tags. For example, the `data` team has resources tagged with `data`, `Data`, and `data-prod`. This is an issue across many of your teams. You want to consolidate all these tags, across providers, into one `data` tag.
 
@@ -412,7 +412,7 @@ Within Cost Reports, you can easily filter by this tag to see all costs related 
 </Step>
 </Steps>
 
-**Example 3: Using Flexible Match to Consolidate Similar Tag Values**
+#### Example 3 - Using Flexible Match to Consolidate Similar Tag Values
 
 Your teams use inconsistent tagging conventions, resulting in multiple variations in casing and formatting. For example, Team A’s tag appears in several forms across usage data, such as `teamA`, `team_a`, `team-a`, and `Team A`. You can use the [flexible match](/cost_reports#flexible-match) filter option to match for all of these variants, as well as future variants, in a single tag configuration.
 
@@ -439,7 +439,7 @@ This will automatically match all variants of Team A, such as `teamA`, `team_a`,
 </Step>
 </Steps>
 
-**Cost-Based Allocation Example**
+### Cost-Based Allocation Example
 
 In your organization, teams share resources, such as RDS databases or EC2 instances, and each team consumes different percentages of these resources each month. Your organization is also charged a static support fee each month for AWS. As shown in the diagram below, you want to allocate a portion of the support fee to each team based on their proportional use of AWS resources. So in the below example, since the Infra team is responsible for 50% of all AWS costs, they should also be responsible for 50% of the support fee. You can create a cost-based allocation virtual tag for allocating portions of the support fee to each respective team.
 
@@ -448,7 +448,7 @@ In your organization, teams share resources, such as RDS databases or EC2 instan
 
 </Frame>
 
-**Prerequisites**
+#### Prerequisites
 
 You have an existing provider tag in AWS that identifies resources for your teams. This tag will be used in step 2.
 
@@ -495,7 +495,7 @@ The resulting report shows how much of the support fee each team is allocated.
 </Step>
 </Steps>
 
-#### Business Metrics-Based Allocation Example
+### Business Metrics-Based Allocation Example
 
 You are working with your infrastructure team and want to ensure that the proportional cost of CPU time on a shared resource is allocated to the distinct cost centers that are consuming the CPU. In the below example, you want each team’s portion of CPU usage billed as a corresponding percentage of the overall Namespace CPU cost. So, if Team A uses 30% of the resource’s CPU, then they should be billed a proportional percentage of the total Namespace’s costs.
 
@@ -503,7 +503,7 @@ You are working with your infrastructure team and want to ensure that the propor
 ![A flowchart that has a CPU icon in a block at the top and says Shared Resource CPU. CPU has two arrows pointing to two boxes with people icons that say Team A CPU Usage and Team B CPU Usage. These boxes point to a box that says Total Namespace Costs with the Kubernetes icon. This box has two arrows that point to two boxes that say Portion of Namespace Costs Allocated to Team Based on Portion of CPU Usage.](https://assets.vantage.sh/docs/metric-based-example.png)
 </Frame>
 
-**Prerequisite**
+#### Prerequisites
 
 To determine the cost of CPU time to allocate to each respective team, you first create a [labeled business metric](/per_unit_costs#labeled-business-metrics) that includes the CPU time labeled by team. Vantage then calculates the respective percentage of CPU time for each team. The labeled business metric has the following format.
 
@@ -555,7 +555,7 @@ The resulting report shows how much of the Namespace costs each team is allocate
 </Step>
 </Steps>
 
-**Nested Virtual Tags Example**
+### Nested Virtual Tags Example
 
 You want to maintain a hierarchy that reflects how your business units are associated with various applications, and track costs of all your applications per business unit over time. In addition, you also want to avoid having to manually update multiple virtual tags whenever an application changes ownership to another business unit, so you aim to set up a dynamic structure that’s automatically updated.
 
@@ -595,7 +595,7 @@ In associated reports, you can track all costs per business unit, knowing that e
 </Step>
 </Steps>
 
-**Tagging Untaggable Resources in AWS Example**
+### Tagging Untaggable Resources in AWS Example
 
 While you can apply cost and metadata tags in AWS to many resources, there are many other resources that are untaggable in AWS. Therefore, it is hard, if not almost impossible, to achieve 100% allocation in AWS alone. One quick way to first get an inventory of all untagged resources in Vantage—regardless of if they are untaggable—is to create a [Cost Report](/cost_reports) with the following filters:
 

@@ -106,27 +106,35 @@ If a user is a part of a Team that **Cannot Access** a Managed Account, they wil
 
 ### Access Examples
 
-*Example 1: Granting Access to a Managed Account*
+<AccordionGroup>
+  <Accordion title="Example 1 - Granting Access to a Managed Account" icon="user">
+    Team A is assigned **Can Access** to the **Customer A** Managed Account.
 
-Team A is assigned **Can Access** to the **Customer A** Managed Account.
+    <Tip>
+    Result: Any user that belongs to Team A can access the **Customer A** account with their existing role (e.g., Editor).
+    </Tip>
+  </Accordion>
 
-**Result:** Any user that belongs to Team A can access the **Customer A** account with their existing role (e.g., Editor).
+  <Accordion title="Example 2 - Denying Access Despite Other Permissions" icon="user-slash">
+    A user belongs to Team A with **Can Access** to the **Customer A** Managed Account.
 
-*Example 2: Denying Access Despite Other Permissions*
+    The same user also belongs to Team B, which has **Cannot Access** to the **Customer A** account.
+    
+    <Tip>
+    Result: The user cannot access the **Customer A** account because the explicit denial overrides all other access.
+    </Tip>
+  </Accordion>
 
-A user belongs to Team A with **Can Access** to the **Customer A** Managed Account.
+  <Accordion title="Example 3 - Using the Everyone Team for Inheritance" icon="sitemap">
+    The Everyone Team has **Can Access** to the **Customer A** Managed Account.
 
-The same user also belongs to Team B, which has **Cannot Access** to the **Customer A** account.
+    A new user is added to Team A, which has **Inherit Access** to the **Customer A** account.
 
-**Result:** The user cannot access the **Customer A** account because the explicit denial overrides all other access.
-
-*Example 3: Using the Everyone Team for Inheritance*
-
-The Everyone Team has **Can Access** to the **Customer A** Managed Account.
-
-A new user is added to Team A, which has **Inherit Access** to the **Customer A** account.
-
-**Result:** The user can access **Customer A** as it inherits access from Everyone Team.
+    <Tip>
+    Result: The user can access **Customer A** as it inherits access from Everyone Team.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
 
 ### User Permissions
 

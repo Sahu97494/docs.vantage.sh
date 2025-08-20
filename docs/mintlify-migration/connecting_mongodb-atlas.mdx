@@ -17,7 +17,7 @@ description: Vantage integrates with your MongoDB account using the [Invoices AP
 
 [Create a free Vantage account](https://console.vantage.sh/signup), then follow the steps below to integrate MongoDB Atlas costs.
 
-### Step 1: Review the Vantage Integration Page
+### Step 1 - Review the Vantage Integration Page
 
 Navigate to the [MongoDB Atlas Settings](https://console.vantage.sh/settings/mongo) page in the Vantage console. Then, click **Add API Key**.
 
@@ -27,7 +27,7 @@ You will need to add your **Organization ID**, **Public API key**, and **Private
 ![Add MongoDB information in the Vantage console](https://assets.vantage.sh/docs/connect-mongo/mongodb-vantage-console.png)
 </Frame>
 
-### Step 2: Obtain Organization ID
+### Step 2 - Obtain Organization ID
 
 <Steps>
     <Step>
@@ -51,7 +51,7 @@ You will need to add your **Organization ID**, **Public API key**, and **Private
     </Step>
 </Steps>
 
-### Step 3: Create an Organization API Key
+### Step 3 - Create an Organization API Key
 
 Next, you'll create an API key and grant it read-only permissions to your invoices and, optionally, to cluster-level cost data.
 
@@ -107,7 +107,7 @@ Next, you'll create an API key and grant it read-only permissions to your invoic
 
 If you want to have Vantage ingest per-cluster resource data from MongoDB Atlas, then proceed to the next section. Otherwise, back in the Vantage console, click **Add Key**.
 
-### Step 4: Grant Project Access for Active Resources
+### Step 4 - Grant Project Access for Active Resources
 
 <Steps>
     <Step>
@@ -152,7 +152,7 @@ If you want to have Vantage ingest per-cluster resource data from MongoDB Atlas,
 
 Your MongoDB Atlas integration status should automatically update from `Pending` to `Importing`. If you've successfully granted project access for active resources, your Active Resources view will begin populating with cost data.
 
-### Next Steps: Manage Workspace Access
+### Next Steps - Manage Workspace Access
 
 Once your costs are imported, select which workspaces this integration is associated with. See the [Workspaces](/workspaces#manage-workspace-provider-integrations) documentation for information.
 
