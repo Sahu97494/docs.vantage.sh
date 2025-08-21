@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 Vantage supports single sign-on (SSO) via self-service single sign-on as well as several other supported IdPs. You can use self-service SSO to connect your SAML (Security Assertion Markup Language) Identity Provider (IdP) to your Vantage account. With self-service SSO, you can use your existing credentials to authenticate and access your Vantage account. SSO streamlines the login process since users don't need to create a new account or remember another set of login credentials for Vantage.
 
-Vantage uses Just-in-Time (JIT) provisioning for user provisioning. As long as a user is granted access to your IdP, the user will be provisioned an account in Vantage when they first log in.
+Vantage uses Just in Time (JIT) provisioning for user provisioning. As long as a user is granted access to your IdP, the user will be provisioned an account in Vantage when they first log in.
 
 ## Self-Service SSO via SAML
 
