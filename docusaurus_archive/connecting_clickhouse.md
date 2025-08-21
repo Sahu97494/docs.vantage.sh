@@ -54,12 +54,16 @@ The below instructions for creating an API key are based on the [ClickHouse docu
     </details>
 3. Add the following key details:
    - For **API key name**, enter *vantage*.
-   - For **Organization Permissions**, select **Developer**. (You can read more about roles and permissions in the [ClickHouse documentation](https://clickhouse.com/docs/cloud/security/cloud-access-management/overview).)
-   - For **Expires**, select an expiration date. If the key expires, you will need to supply Vantage with a new ClickHouse Cloud API key.
+   - For **Expiration date**, select an expiration date. If the key expires, you will need to supply Vantage with a new ClickHouse Cloud API key.
+   - For **Organization role**, select **Developer**. (You can read more about roles and permissions in the [ClickHouse documentation](https://clickhouse.com/docs/cloud/security/cloud-access-management/overview).)
+   - For **Service roles**:
+     - Under **Access scope**, select **All services**.
+     - For **Role**, select **Query Endpoints**.
+   - For **Allow access to this API key from**, select **Anywhere**.
    
   <details><summary>Click to view example image</summary>
     <div>
-    <img alt="Creating a ClickHouse key" width="100%" src="https://assets.vantage.sh/docs/clickhouse-create-key.png"/> </div>
+    <img alt="Creating a ClickHouse key" width="80%" src="https://assets.vantage.sh/docs/clickhouse-api-create.png"/> </div>
   </details>
 1. Click **Generate API Key**.
    :::note
@@ -112,7 +116,7 @@ On ClickHouse Cloud [Cost Reports](/cost_reports), you can filter across severa
 - Category (e.g., datawarehouse or service)
 - Subcategory (e.g., specific usage category, like `interRegionTier1DataTransferCHC` or `publicDataTransferCHC`)
 - Resource (specific ID for a given ClickHouse cluster)
-- Tags ([Virtual Tags](/tagging) created in Vantage)
+- Tags: Includes [Virtual Tags](/tagging) created in Vantage, as well as `entityName`, which is represented as Tag Key: `clickhouse:entityName`.
 - Charge Type (e.g., usage)
 
 You can also view credits or discounts for ClickHouse Cloud costs in Cost Reports.

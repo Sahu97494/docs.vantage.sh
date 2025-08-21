@@ -39,8 +39,13 @@ Your available recommendations depend on what services and resources are running
    :::tip
    To filter recommendations by provider, open the **Show All** menu at the top right of the table and select a provider.
    :::
-3. In cases where actions are recommended for specific resources, such as adding lifecycle policies, the **View resources** button is displayed. Click this button to see a list of the affected resources.
-4. If you no longer want to view a recommendation, click the **Archive** icon (looks like an arrow pointing down). The recommendation will be moved to the **Archived** tab.
+3. In cases where actions are recommended for specific resources, such as extended support actions or rightsizing resources, the **View resources** button is displayed. Click this button to see a [Resource Report](/active_resources) that includes all affected resources. 
+   - Specific remediation steps are provided at the top of the Resource Report in a recommendation card. This card contains a description of the recommendation and a remediation workflow, which can include CLI commands, links to provider console actions, a list of manual steps, and references to relevant Vantage blogs. Vantage also provides additional context on recommendation Resource Reports by displaying custom metadata columns relevant to the recommendation.
+   - CLI commands can be copied and run directly in your terminal to act on the recommendation.
+   <div style={{display:"flex", justifyContent:"center"}}>
+    <img alt="CLI recommendations in the console" width="90%" src="https://assets.vantage.sh/docs/cost-recs-steps.png" />
+  </div>
+4. If you no longer want to view a recommendation, return to the Recommendations page and click the **Archive** icon (looks like an arrow pointing down). The recommendation will be moved to the **Archived** tab.
 
 ### View Recommendations during a Trial
 

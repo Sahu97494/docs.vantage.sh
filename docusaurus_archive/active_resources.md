@@ -173,7 +173,7 @@ To reorder the columns of your Resource Report:
 To sort a column in a Resource Report, click the arrow next to a column name in the column header. The active sort column con is highlighted in green, with an arrow indicating the sort direction.
 
 :::note
-All columns are sortable except **Resource**, **Type**, and **Team**.
+All columns are sortable except **Account**.
 ::: 
 
 <div style={{ display: "flex", justifyContent: "center", boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)", borderRadius: "10px", overflow: "hidden" }} width="80%">
@@ -208,6 +208,8 @@ To export a resource report, click the export button (looks like an arrow pointi
 ## Additional Active Resource Views
 
 The following tabs are available for specific resources on the **Active Resources** screen. These tabs provide additional resource-specific information.
+
+Some of these tabs may also display [Cost Recommendations](/cost_recommendations) relevant to the specific resource you are viewing. In these cases, a recommendation card is displayed at the top of the tab containing a description of the recommendation and remediation steps. The remediation workflow can include CLI commands, links to provider console actions, a list of manual steps, and references to Vantage blogs. When displayed within a specific resource tab, like Rightsizing or Extended Support, the CLI command will automatically include the exact resource ARN of the resource you are viewing.
 
 ### Billing Code Descriptions
 
