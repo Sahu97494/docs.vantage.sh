@@ -209,6 +209,8 @@ To export a resource report, click the export button (looks like an arrow pointi
 
 The following tabs are available for specific resources on the **Active Resources** screen. These tabs provide additional resource-specific information.
 
+Some of these tabs may also display [Cost Recommendations](/cost_recommendations) relevant to the specific resource you are viewing. In these cases, a recommendation card is displayed at the top of the tab containing a description of the recommendation and remediation steps. The remediation workflow can include CLI commands, links to provider console actions, a list of manual steps, and references to Vantage blogs. When displayed within a specific resource tab, like Rightsizing or Extended Support, the CLI command will automatically include the exact resource ARN of the resource you are viewing.
+
 ### Billing Code Descriptions
 
 AWS practitioners who are having trouble understanding AWS billing codes can find descriptions of each billing code, other variations of that billing code, and other services that use the same billing code for specific services in Resource Reports. When you view a Resource Report for a specific service (e.g., EC2 instances), a link to [cur.vantage.sh](https://cur.vantage.sh/) is provided that takes you to a page with details for that billing line item. 
